@@ -7,11 +7,20 @@ function ThemeProvider({ children } : { children: React.ReactNode }) {
       theme={{
         token: {
           colorPrimary : '#111',
+          borderRadius: 3,
+          controlOutline : 'none',
         },
         components: {
           Button : {
-            controlHeight : 45,
-          }
+            controlHeight : 45, 
+            defaultBorderColor : '#111',
+          },
+          Select : {
+            controlHeight : 45, 
+          },
+          Input : {
+            controlHeight : 45, 
+          },
         },
       }}
     >
