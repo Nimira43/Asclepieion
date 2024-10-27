@@ -1,10 +1,22 @@
 import React from 'react'
+import { ConfigProvider } from 'antd'
 
 function ThemeProvider({ children } : { children: React.ReactNode }) {
   return (
-    <div>
+    <ConfigProvider
+      theme={{
+        token: {
+          colorPrimary : '#111',
+        },
+        components: {
+          Button : {
+            controlHeight : 45,
+          }
+        },
+      }}
+    >
       { children }
-    </div>
+    </ConfigProvider>
   )
 }
 
