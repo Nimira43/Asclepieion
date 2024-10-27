@@ -1,6 +1,5 @@
 import React from 'react'
-import { Button, Input, Select} from 'antd'
-
+import { Button, Image, Input, Select} from 'antd'
 const options = [
   {label: 'Appointments', value: 'Appointments'},
   {label: 'Prescriptions', value: 'Prescriptions'},
@@ -14,6 +13,7 @@ const HomePage = () => {
       <Input placeholder='Enter Username' />
       <Select placeholder='Options' options={options} />
       <Button type='primary'>Submit</Button>
+      
     </div>
   )
 }
