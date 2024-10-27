@@ -3,8 +3,8 @@ import './globals.css'
 import ThemeProvider from '@/theme'
 
 export const metadata: Metadata = {
-  title: 'Medi-Care',
-  description: 'App using Next JS,',
+  title: 'Asclepieion',
+  description: 'Medi-care app using Next JS, Ant-D, Clerk, Tailwind and TypeScript',
 }
 
 export default function RootLayout({

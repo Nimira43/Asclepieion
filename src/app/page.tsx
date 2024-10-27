@@ -10,7 +10,7 @@ const options = [
 const HomePage = () => {
   return (
     <div className='p-5 flex flex-col gap-5 w-max'>
-      <h1>Medi-Care - Home Page</h1>
+      <h1>Asclepieion - Home Page</h1>
       <Input placeholder='Enter Username' />
       <Select placeholder='Options' options={options} />
       <Button type='primary'>Submit</Button>
