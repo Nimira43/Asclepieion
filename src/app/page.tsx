@@ -13,7 +13,7 @@ const HomePage = () => {
       <h1>Medi-Care - Home Page</h1>
       <Input placeholder='Enter Username' />
       <Select placeholder='Options' options={options} />
-      <Button type='primary'>Submit</Button>
+      <Button type='primary' className='bg-[#ff4500]'>Submit</Button>
     </div>
   )
 }

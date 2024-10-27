@@ -1,9 +1,10 @@
-import type { Metadata } from "next"
-import "./globals.css"
+import type { Metadata } from 'next'
+import './globals.css'
+import ThemeProvider from '@/theme'
 
 export const metadata: Metadata = {
-  title: "Medi-Care",
-  description: "App using Next JS,",
+  title: 'Medi-Care',
+  description: 'App using Next JS,',
 }
 
 export default function RootLayout({
@@ -12,9 +13,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang='en'>
       <body>
-        {children}
+        <ThemeProvider>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   )
