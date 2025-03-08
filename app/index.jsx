@@ -22,14 +22,11 @@ const HomeScreen = () => {
         style={styles.image}
       />
       <Text style={styles.logoText}>Native Tasks</Text>
-      <Text
-        style={{
-          ...styles.text,
-          fontFamily: 'PoppinsLight'
-        }
-      }>
+      <Text style={styles.mainText }>
         Task Management Application
       </Text>
+      <Text style={styles.subtitle}>by NimiraTech</Text>
+      
     </View>
   )
 }
@@ -47,8 +44,16 @@ const styles = StyleSheet.create({
     fontSize: 32,
     color: '#ff4500',
   },
-  text: {
+  mainText: {
+    fontFamily: 'PoppinsLight', 
     fontSize: 18,
+    color: '#111'
+  },
+  subtitle: {
+    fontFamily: 'PoppinsLight',
+    fontSize: 16,
+    color: '#333',
+    marginBottom: 20
   },
   image: {
     width: 150,
