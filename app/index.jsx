@@ -43,6 +43,7 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 18,
   },
+  
 })
 
 export default HomeScreen
