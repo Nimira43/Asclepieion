@@ -1,6 +1,7 @@
-import { Text, View, StyleSheet } from 'react-native'
+import { Text, View, StyleSheet, Image } from 'react-native'
 import { useFonts } from 'expo-font'
 import AppLoading from 'expo-app-loading'
+import LogoImage from '../assets/images/favicon.png'
 
 const HomeScreen = () => {
   const [fontsLoaded] = useFonts({
@@ -16,6 +17,10 @@ const HomeScreen = () => {
     <View
       style={ styles.container }
     >
+      <Image
+        source={LogoImage}
+        style={styles.image}
+      />
       <Text style={styles.logoText}>Native Tasks</Text>
       <Text
         style={{
@@ -34,6 +39,8 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    padding: 20,
+    backgroundColor: '#eee'
   },
   logoText: {
     fontFamily: 'VT323', 
@@ -43,7 +50,12 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 18,
   },
-  
+  image: {
+    width: 150,
+    height: 100,
+    marginBottom: 20,
+    borderRadius: 10,
+  }
 })
 
 export default HomeScreen
